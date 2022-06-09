@@ -9,7 +9,7 @@ public class Reverseinteger {
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("Enter the number: ");
-		num = input.nextInt();
+		num = input.nextInt();  
 		
 		while (num !=0) {
 			reminder = num%10;
