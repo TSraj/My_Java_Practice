@@ -3,6 +3,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public class String_MultidimensionalArray {
 	public static void main(String[] args) {
+		
+		//This is for string example
 		String my_name;
 		my_name = new String("Tanver Sadik");
 		
@@ -14,6 +16,8 @@ public class String_MultidimensionalArray {
 //		prln(my_name);
 //		prln("\n\nThe length of this string is: " +my_name.length());
 		
+		
+		//This is for Two Dymension Array
 		int[][] twoDArray = new int[2][4];
 		twoDArray[0][0] =1;
 		twoDArray[0][1] =2;
