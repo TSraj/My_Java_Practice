@@ -17,23 +17,51 @@ public class looTryCatch {
 //		}
 		
 		int[][] twoDArray = new int[2][4];
+		twoDArray[0][0] =1;
+		twoDArray[0][1] =2;
+		twoDArray[0][2] =4;
+		twoDArray[0][3] =5;
 		
-			prln("Please give your input: ");
+		twoDArray[1][0] =2;
+		twoDArray[1][1] =4;
+		twoDArray[1][2] =5;
+		twoDArray[1][3] =9;
+		
+//			prln("Please give your input: ");
 			//using for user input
-			for (int row = 0; row < 2; row++) { 
-				for (int column = 0; column < 4; column++) { 
-					pr("twoDArray["+row+"]["+column+"]: ");
-					twoDArray[row][column] = myScanner.nextInt();
+//			for (int row = 0; row < 2; row++) { 
+//				for (int column = 0; column < 4; column++) { 
+//					pr("twoDArray["+row+"]["+column+"]: ");
+//					twoDArray[row][column] = myScanner.nextInt();
+//				}
+//			}
+			
+			//try catch final
+			try {
+				//printing the user input
+//				for (int row = 0; row < 2; row++) {
+//					for (int column = 0; column < 4; column++) {
+//							pr(twoDArray[row][column]+"\t");
+//					}
+//					prln("\n");
+//				}
+				
+				pr("Please give a number: ");
+				int userInput = myScanner.nextInt();
+				while (userInput!=200) {
+					prln(100/userInput);
+					pr("Please give a number: ");
+					userInput = myScanner.nextInt();
+				
+				
 				}
+			} catch (Exception unknException) {
+				unknException.printStackTrace();
+			}finally {
+				prln("come out of try-catch block");
 			}
 			
-			//printing the user input
-			for (int row = 0; row < 2; row++) {
-				for (int column = 0; column < 4; column++) {
-						pr(twoDArray[row][column]+"\t");
-				}
-				prln("\n");
-			}
+			prln("Thank you for using our program");			
 		
 //		for (int j = 2; j < 100; j*=2) {
 //			prln(j);
